@@ -9,6 +9,7 @@
     --divide_line_color: #ececec;
     --card_border: #EEEEEE;
     --hero_background: #C4C4C4;
+    --social-icon-color: #AFB1B8;
 }
 
 html {
@@ -118,7 +119,7 @@ button {
 }
 
 .header-contact-item {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -136,13 +137,18 @@ button {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor;
+    align-self: center;
 }
 
 .icon-phone {
     width:10px;
     height: 16px;
     margin-right: 10px;
+    fill: currentColor;
 }
+
+
 
 .navigation-list-item:hover,
 .navigation-list-item:focus,
@@ -150,7 +156,6 @@ button {
 .header-contact-item:hover,
 .navigation-list-item.current {
     color: var(--web_hover_button_color);
-    stroke: var(--web_hover_button_color);
 }
 
 
@@ -229,7 +234,7 @@ button {
 .features-list-item::before{
     content: "";
     display: block;
-    width: 270pxpx;
+    width: 270px;
     height: 120px;
     background-color: F5F4FA;
     background-repeat: no-repeat;
@@ -349,6 +354,40 @@ button {
     color: var(--mail_phone_desc);
 }
 
+.team-social {
+    display: flex;
+    margin: 16px 32px 30px;
+}
+
+.team-social-item {
+    display: block;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+.team-list-item:last-child{
+    margin-right: 0;
+}
+.team-social-item:hover{
+    background-color: var(--web_hover_button_color);
+    border-radius: 50px;
+    color: white;
+}
+
+
+.team-social-item > .team-social-link {
+    color: var(--social-icon-color);
+}
+
+.team-social-item > .team-social-link:hover {
+    color: var(--white_color);
+}
+
+.icon-social{
+    margin: 12px;
+    fill: currentColor;
+}
 
 /*customers*/
 
