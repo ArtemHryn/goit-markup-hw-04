@@ -362,25 +362,24 @@ button {
 }
 
 .team-social-item {
-    display: block;
     margin-right: 10px;
+}
+
+.team-social-item:last-child{
+    margin-right: 0;
+}
+
+.team-social-link {
+    display: block;
     width: 44px;
     height: 44px;
     color: var(--social-icon-color);
 }
 
-.team-list-item:last-child{
-    margin-right: 0;
-}
-.team-social-item:hover{
+.team-social-link:hover {
     background-color: var(--web_hover_button_color);
     border-radius: 50px;
-    color: white;
-}
-
-
-.team-social-item > .team-social-link {
-    color: inherit;
+    color: var(--white_color);
 }
 
 .icon-social{
@@ -398,8 +397,6 @@ button {
 
 .customers-list-header {
     margin-bottom: 50px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1666;
@@ -412,27 +409,27 @@ button {
 }
 
 .customers-list-item {
-    display: block;
-    width: 170px;
-    height: 92px;
     margin-right: 30px;
-    padding: 16px 32px;
-
-    border: 1px solid var(--social-icon-color);
-    color: var(--social-icon-color);
 }
 
 .customers-list-item:last-child {
     margin-right: 0;
 }
 
-.customers-list-item:hover {
-    color: var(--web_hover_button_color);
-    border: 1px solid var(--web_hover_button_color)
-}
+
 
 .customers-list-item > a {
-    color: inherit;
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid var(--social-icon-color);
+    color: var(--social-icon-color);
+}
+
+.customers-list-item > a:hover {
+    color: var(--web_hover_button_color);
+    border: 1px solid var(--web_hover_button_color)
 }
 
 .icon-customers {
@@ -527,15 +524,7 @@ button {
 }
 
 .social-list-item {
-    display: block;
-    width: 44px;
-    height: 44px;
-
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
     margin-right: 10px;
-
-    color: var(--white_color);
 }
 
 .social-list-item:last-child {
@@ -547,7 +536,14 @@ button {
 }
 
 .social-list-item > a{
-    color: inherit;
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    color: var(--white_color);
 }
 
 .footer-icon-social {
