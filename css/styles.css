@@ -8,6 +8,7 @@
     --black_color: #000;
     --divide_line_color: #ececec;
     --card_border: #EEEEEE;
+    --hero_background: #C4C4C4;
 }
 
 html {
@@ -35,6 +36,11 @@ ul {
     list-style-type: none;
     padding-left: 0;
 	margin: 0;
+}
+
+button {
+    border: 0;
+    padding: 0;
 }
 
 .container {
@@ -100,6 +106,8 @@ ul {
     color: var(--main_color);
 }
 
+/*mail and phone*/
+
 .header-contacts {
     display: flex;
     margin-left: auto;
@@ -124,12 +132,25 @@ ul {
 }
 
 
+.icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.icon-phone {
+    width:10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
 .navigation-list-item:hover,
 .navigation-list-item:focus,
 .header-contact-item:focus,
 .header-contact-item:hover,
 .navigation-list-item.current {
     color: var(--web_hover_button_color);
+    stroke: var(--web_hover_button_color);
 }
 
 
@@ -151,9 +172,9 @@ ul {
     padding-top: 200px;
 
     text-align: center;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), #C4C4C4), url("../images/123.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-background.jpg");
     background-repeat: no-repeat;
-    background-color: var(--wrapper_footer_background_color);
+    background-color: var(--hero_background);
 }
 
 .wrapper-desc {
@@ -201,9 +222,36 @@ ul {
 }
 
 .features-list-item {
+    display: block;
     width: 270px;
-    height: 101px;
 }
+
+.features-list-item::before{
+    content: "";
+    display: block;
+    width: 270pxpx;
+    height: 120px;
+    background-color: F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.antenna::before {
+    background-image: url('../images/features/antenna.svg');
+}
+
+.clock::before {
+    background-image: url('../images/features/clock.svg');
+}
+
+.vector::before {
+    background-image: url('../images/features/Vector.svg');
+}
+
+.austronaut::before {
+    background-image: url('../images/features/astronaut.svg');
+}
+
 .features-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -299,6 +347,15 @@ ul {
     line-height: 1.18;
     text-align: center;
     color: var(--mail_phone_desc);
+}
+
+
+/*customers*/
+
+.customers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /*footer*/
