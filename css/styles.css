@@ -531,9 +531,6 @@ button {
     margin-right: 0;
 }
 
-.social-list-item:hover {
-    background-color: var(--web_hover_button_color);
-}
 
 .social-list-item > a{
     display: block;
@@ -544,6 +541,10 @@ button {
     border-radius: 50%;
 
     color: var(--white_color);
+}
+
+.social-list-item > a:hover {
+    background-color: var(--web_hover_button_color);
 }
 
 .footer-icon-social {
